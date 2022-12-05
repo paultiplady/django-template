@@ -1,3 +1,5 @@
-from django.test import TestCase
+from django.conf import settings
 
-# Create your tests here.
+
+def test_config():
+    assert settings.SECRET_KEY
